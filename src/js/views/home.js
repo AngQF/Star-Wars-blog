@@ -33,7 +33,7 @@ export const Home = () => {
 								<div className="card-body">
 									<h5 className="card-title">{character.name}</h5>
 									<Link to={"/character/" + character.uid} className="btn btn-light"><i className="fa-solid fa-angles-right"> Learn more</i></Link>
-									<button onClick={()=> actions.setFavorites(<Link to={"/character/" + character.uid}>{character.name}</Link>)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
+									<button onClick={()=> actions.setFavorites(character.name)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
 								</div>
 							</div>
 						)}
@@ -46,7 +46,7 @@ export const Home = () => {
 								<div className="card-body">
 									<h5 className="card-title">{character.name}</h5>
 									<Link to={"/character/" + character.uid} className="btn btn-light"><i className="fa-solid fa-angles-right"> Learn more</i></Link>
-									<button onClick={()=> actions.setFavorites(<Link to={"/character/" + character.uid}>{character.name}</Link>)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
+									<button onClick={()=> actions.setFavorites(character.name)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
 								</div>
 							</div>
 						)}
@@ -59,7 +59,7 @@ export const Home = () => {
 								<div className="card-body">
 									<h5 className="card-title">{character.name}</h5>
 									<Link to={"/character/" + character.uid} className="btn btn-light"><i className="fa-solid fa-angles-right"> Learn more</i></Link>
-									<button onClick={()=> actions.setFavorites(<Link to={"/character/" + character.uid}>{character.name}</Link>)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
+									<button onClick={()=> actions.setFavorites(character.name)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
 								</div>
 							</div>
 						)}
@@ -76,7 +76,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">{vehicle.name}</h5>
 								<Link to={"/vehicle/" + vehicle.uid} className="btn btn-light"><i className="fa-solid fa-angles-right"> Learn more</i></Link>
-								<button onClick={()=> actions.setFavorites([<Link to={"/vehicle/" + vehicle.uid}>{vehicle.name}</Link>])} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
+								<button onClick={()=> actions.setFavorites(vehicle.name)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
 							</div>
 						</div>
 					)}
@@ -93,7 +93,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">{planet.name}</h5>
 								<Link to={"/planet/" + planet.uid} className="btn btn-light"><i className="fa-solid fa-angles-right"> Learn more</i></Link>
-								<button onClick={()=> actions.setFavorites([<Link to={"/planet/" + planet.uid}>{planet.name}</Link>])} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
+								<button onClick={()=> actions.setFavorites(planet.name)} className="btn btn-outline-dark float-end"><i className="fa-solid fa-heart fa-md"></i></button>
 							</div>
 						</div>
 					)}

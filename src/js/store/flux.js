@@ -59,20 +59,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore()
 				if(!store.favorites.includes(item))
 				{setStore({favorites: [...store.favorites, item]})
-				}else{
-					//Eliminar usando un array vacío y un bucle for//
-					// let remove = [];
-					// for (let index = 0; index < store.favorites.length; index++) {
-					// 	const favorite = store.favorites[index];
-					// 	if(item != favorite){
-					// 		remove.push(favorite)
-					// 	}
-					// 	setStore({favorites: remove})
-					// }
+				}else{null}
+			},
+			deleteFavorites: async(item) =>{
+				const store = getStore()
 
-					//Eliminar usando filter//
-					setStore({favorites: store.favorites.filter((fav) => fav != item)})
-				}
+				//Eliminar usando un array vacío y un bucle for//
+				// let remove = [];
+				// for (let index = 0; index < store.favorites.length; index++) {
+				// 	const favorite = store.favorites[index];
+				// 	if(item != favorite){
+				// 		remove.push(favorite)
+				// 	}
+				// 	setStore({favorites: remove})
+				// }
+
+				//Eliminar usando filter//
+				setStore({favorites: store.favorites.filter((fav) => fav != item)})
 			}
 		}
 	};

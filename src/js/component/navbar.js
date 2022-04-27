@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../../styles/navbar.css";
 import { Context } from "../store/appContext";
@@ -26,7 +26,7 @@ export const Navbar = () => {
 								key={index} 
 								className="dropdown-item"
 								value={favorite}
-								quit={() => actions.setFavorites(favorite)}
+								quit={() => actions.deleteFavorites(favorite)}
 								/>
 							)
 						})}
